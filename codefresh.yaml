@@ -7,10 +7,16 @@ services:
       ports:
         - 6379     
 steps:
-  my_integration_tests:
-    image: my-app-image
-    title: Running integration tests
-    commands:
-      - npm run test
-    services:
-      - my_database
+  main_clone:
+    title: "Cloning repository"
+      type: "git-clone"
+      repo: "codefreshdemo/demochat"
+      revision: "master"
+      stage: "clone"
+    #my_integration_tests:
+    #image: my-app-image
+    #title: Running integration tests
+    #commands:
+      #- npm run test
+    #services:
+      #- my_database
