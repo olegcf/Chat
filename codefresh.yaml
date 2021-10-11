@@ -9,10 +9,10 @@ services:
 steps:
   main_clone:
     title: "Cloning repository"
-      type: "git-clone"
-      repo: "codefreshdemo/demochat"
-      revision: "master"
-      stage: "clone"
+    type: "git-clone"
+    repo: "codefreshdemo/demochat"
+    revision: "master"
+    stage: "clone"
     #my_integration_tests:
     #image: my-app-image
     #title: Running integration tests
